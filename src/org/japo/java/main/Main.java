@@ -15,7 +15,7 @@
  */
 package org.japo.java.main;
 
-import java.util.Random;
+import java.util.Date;
 
 /**
  *
@@ -23,13 +23,11 @@ import java.util.Random;
  */
 public final class Main {
 
-    public static final Random RND = new Random();
-
     public static void main(String[] args) {
-
         // Generar dato
-        int balance = RND.nextInt();
+        long tiempo = new Date().getTime();
 
-        System.out.printf("Balance de circulación ....: %d.%n", balance);
+        System.out.printf("Tiempo UNIX (s)....... : %d%n", tiempo);
+
     }
 }
